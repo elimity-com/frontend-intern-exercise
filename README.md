@@ -17,21 +17,21 @@ After you have installed Angular you can run the starter code from inside the re
 2. Start the application by running `ng serve`.
 
 ### Exercise requirements
-#### End result
+#### End result (example)
 ![image](https://user-images.githubusercontent.com/3659344/86251016-9e708080-bbb1-11ea-8131-4c67a3f6e1da.png)
 
 #### 1. Create a project component
 - Create a new component that displays project info in a card. You can use [`mat-card`](https://material.angular.io/components/select/overview) for this from the angular material library.
-- This component also shows a button to show or hide a list of the project tasks.
+- This component shows a button to show or hide a list of the project tasks.
 - If the project has no tasks, an apropriate message is shown: `No tasks`.
-- This component should have two input parameters: 
+- This component has two input parameters: 
   1. `project` of type `Project`: the project to be displayed in the card.
   2. `showTasks` of type `boolean`: whether or not the project tasks should be shown.
-- This component should have one output parameter:
+- This component has one output parameter:
   1. `showTasksChange` which emits a `boolean`. Each time the HIDE TASKS button is clicked, `showTasksChange` emits `false`. Each time the SHOW TASKS button is clicked, `showTasksChange` emits `true`.
 - This component shows the four properties of a project: owner, priority, due date and the number of tasks.
 - This component also shows a list of the project tasks if `showTasks` is `true` and hide the tasks if it is `false`.
-- See the screenshot above for how this component should look like (as an example, you can use your own layout if you prefer this).
+- See the screenshot above for how this component could look like (as an example, you can use your own layout if you prefer this).
 
 #### 2. Use the project component to display the list of projects
 Use the component created in the first step to display all projects.
@@ -54,12 +54,20 @@ Use the component created in the first step to display all projects.
 
 Your submission will be evaluated against the following criteria:
 
-* Meets the stated requirements
-* Code is high quality and well organized
-* Best practices are followed including:
-  * Version control
-  * Iterative development
-  * ...
+* Meets the stated requirements.
+* Consistency with the existing code.
+* Understanding of Angular fundamentals.
+* Adherence to Elimity's style guidelines:
+  * Strong types over implicit assumptions.
+  * Immutability over mutability.
+  * Simple over clever.
+
+
+## Practicalities
+
+- These practices are important on the job, but won't affect your grades:
+  - proper version control
+  - testing
 
 ## Submission
 
