@@ -1,0 +1,24 @@
+<div class="m-4">
+  <div class="align-items-center d-flex justify-content-between mb-4">
+    <h1 class="mat-h1 mb-0">Todos</h1>
+    <button (click)="onClickAddTodo()" color="primary" mat-flat-button>
+      ADD TODO
+    </button>
+  </div>
+  <mat-card class="p-0" *ngIf="showTodos; else template">
+    <mat-action-list class="p-0" [disableRipple]="true">
+      <mat-list-item class="item" *ngFor="let todo of todos; let i = index">
+        <h3 matLine>{{ todo.label }}</h3>
+        <p matLine>{{ todo.timestamp | date: "medium" }}</p>
+        <button (click)="onClickDelete(i)" mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-action-list>
+  </mat-card>
+  <ng-template #template>
+    <div class="fst-italic text-center text-muted mt-5">
+      All done! Add a todo to show it here.
+    </div>
+  </ng-template>
+</div>

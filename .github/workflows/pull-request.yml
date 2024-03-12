@@ -1,0 +1,11 @@
+jobs:
+  pull-request:
+    container: node@sha256:cbdfb793208fd6e63664b4d4e1a539a8b69e7c1f69c49dd55ca6e016074744fd
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm ci
+      - run: npx eslint .
+      - run: npx prettier -c .
+
+on: pull_request

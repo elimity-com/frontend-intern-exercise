@@ -1,0 +1,24 @@
+{
+  "overrides": [
+    {
+      "extends": [
+        "eslint:recommended",
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:@typescript-eslint/recommended-type-checked",
+        "plugin:@typescript-eslint/stylistic-type-checked"
+      ],
+      "files": "*.ts",
+      "parserOptions": {
+        "project": true
+      },
+      "plugins": ["@angular-eslint", "@typescript-eslint"]
+    },
+    {
+      "extends": "plugin:@angular-eslint/template/recommended",
+      "files": "*.html",
+      "plugins": ["@angular-eslint/template"]
+    }
+  ],
+  "root": true
+}
