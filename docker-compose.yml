@@ -1,0 +1,10 @@
+services:
+  node:
+    entrypoint: sleep infinity
+    image: node:20
+    init: true
+    ports:
+      - 127.0.0.1:4200:4200
+    volumes:
+      - .:/app
+    working_dir: /app

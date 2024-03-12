@@ -1,0 +1,24 @@
+<h1 matDialogTitle>Add todo</h1>
+<mat-dialog-content>
+  <form class="d-flex flex-column gap-2" #form ngNoForm [style.width.vw]="40">
+    <mat-form-field>
+      <mat-label>Label</mat-label>
+      <input #labelInput matInput required />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Timestamp</mat-label>
+      <input matNativeControl required #timestampInput type="datetime-local" />
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [matDialogClose]>CANCEL</button>
+  <button
+    color="primary"
+    [disabled]="confirmDisabled(form)"
+    mat-button
+    [matDialogClose]="makeTodo(labelInput, timestampInput)"
+  >
+    CONFIRM
+  </button>
+</mat-dialog-actions>
