@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import todos from "./todos.json";
-import { MatLegacyDialog } from "@angular/material/legacy-dialog";
+import { MatDialog } from "@angular/material/dialog";
 import { DialogComponent } from "../dialog/dialog.component";
 import { Todo } from "../../models/todo";
 
@@ -10,7 +10,7 @@ import { Todo } from "../../models/todo";
   templateUrl: "./root.component.html",
 })
 export class RootComponent {
-  public constructor(private readonly dialog: MatLegacyDialog) {}
+  public constructor(private readonly dialog: MatDialog) {}
 
   public onClickAddTodo(): void {
     this.dialog.open(DialogComponent).afterClosed().subscribe(this.addTodo);

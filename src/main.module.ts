@@ -1,14 +1,14 @@
 import { NgModule } from "@angular/core";
 import { RootComponent } from "./components/root/root.component";
 import { BrowserModule } from "@angular/platform-browser";
-import { MatLegacyButtonModule } from "@angular/material/legacy-button";
-import { MatLegacyCardModule } from "@angular/material/legacy-card";
-import { MatLegacyListModule } from "@angular/material/legacy-list";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatListModule } from "@angular/material/list";
 import { MatIconModule } from "@angular/material/icon";
 import { DialogComponent } from "./components/dialog/dialog.component";
-import { MatLegacyDialogModule } from "@angular/material/legacy-dialog";
-import { MatLegacyFormFieldModule } from "@angular/material/legacy-form-field";
-import { MatLegacyInputModule } from "@angular/material/legacy-input";
+import { MatDialogModule } from "@angular/material/dialog";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from "@angular/material/input";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
@@ -17,13 +17,13 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    MatLegacyButtonModule,
-    MatLegacyCardModule,
-    MatLegacyListModule,
+    MatButtonModule,
+    MatCardModule,
+    MatListModule,
     MatIconModule,
-    MatLegacyDialogModule,
-    MatLegacyFormFieldModule,
-    MatLegacyInputModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 })
 export class MainModule {}

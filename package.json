@@ -2,7 +2,7 @@
   "dependencies": {
     "@angular/common": "^17.2.4",
     "@angular/core": "^17.2.4",
-    "@angular/material": "^16.2.14",
+    "@angular/material": "^17.2.2",
     "@angular/platform-browser": "^17.2.4",
     "bootstrap": "^5.3.3"
   },

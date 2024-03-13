@@ -10,7 +10,7 @@
             "outputPath": "dist",
             "polyfills": ["zone.js"],
             "styles": [
-              "@angular/material/legacy-prebuilt-themes/deeppurple-amber.css",
+              "@angular/material/prebuilt-themes/deeppurple-amber.css",
               "bootstrap/dist/css/bootstrap.css"
             ],
             "tsConfig": "tsconfig.json"
